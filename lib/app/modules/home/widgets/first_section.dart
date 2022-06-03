@@ -18,6 +18,7 @@ class FirstSectionWidget extends GetView<HomeController> {
               Expanded(
                   flex: 6,
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
@@ -25,20 +26,27 @@ class FirstSectionWidget extends GetView<HomeController> {
                           ' de Arte Digital',
                           textAlign: TextAlign.right,
                           style: text_header_white),
-                      Text('Trazendo sentido a arte.',
-                          textAlign: TextAlign.right, style: text_header2_dark),
+                      Text(
+                          'Trazendo sentido\n'
+                          'à arte digital.',
+                          textAlign: TextAlign.right,
+                          style: text_header2_dark),
                     ],
                   )),
+              Expanded(flex: 2, child: Container()),
               Expanded(
-                flex: 4,
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Text(
-                      'A arte é uma forma de expressar o que cada um sente no íntimo, ela é uma maneira de traduzir as experiências de vida das pessoas, além de funcionar como veículo de informação. Assim a arte, principalmente no âmbito digital/virtual, pode ser considerada uma ferramenta de troca de conhecimento e aproximação entre pessoas mesmo que elas estejam geograficamente distantes.',
-                      style: text_body_white,
-                    )
-                  ],
+                flex: 6,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Text(
+                        'A arte é uma forma de expressar o que cada um sente no íntimo, ela é uma maneira de traduzir as experiências de vida das pessoas, além de funcionar como veículo de informação. Assim a arte, principalmente no âmbito digital/virtual, pode ser considerada uma ferramenta de troca de conhecimento e aproximação entre pessoas mesmo que elas estejam geograficamente distantes.',
+                        style: text_body_white,
+                      )
+                    ],
+                  ),
                 ),
               )
             ],

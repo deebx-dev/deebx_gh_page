@@ -34,30 +34,38 @@ class SecondSectionWidget extends GetView<HomeController> {
                 ),
               ]),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        'saaaaaaaaaaaaaaa',
-                        style: text_body_dark,
+                      SizedBox(
+                        width: Get.width / 2,
+                        child: Text(
+                          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+                          style: text_body_dark,
+                        ),
                       ),
+                      Padding(
+                        padding: EdgeInsets.zero,
+                        child: SimpleShadow(
+                          sigma: 2,
+                          color: Colors.black,
+                          opacity: 0.6,
+                          offset: const Offset(7, 7),
+                          child: Image.asset(
+                            '${IMAGES}example_art.png',
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ],
               ),
             ),
-            Positioned.fill(
-                child: Align(
-                    alignment: Alignment.bottomLeft,
-                    child: SimpleShadow(
-                      sigma: 2,
-                      color: Colors.black,
-                      opacity: 0.6,
-                      offset: const Offset(7, 7),
-                      child: Image.asset('${IMAGES}example_art.png'),
-                    )))
           ],
         ),
       ),

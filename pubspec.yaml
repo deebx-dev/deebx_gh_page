@@ -32,6 +32,7 @@ dependencies:
   get:
   google_fonts: ^3.0.1
   simple_shadow: ^0.3.0
+  url_launcher: ^6.1.2
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -63,6 +64,9 @@ flutter:
     - assets/images/bg_image.jpg
     - assets/images/bg_image_2.jpg
     - assets/images/logo.png
+    - assets/icons/instagram.png
+    - assets/images/creator.png
+    - assets/icons/linkedin.png
     - assets/images/example_art.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
