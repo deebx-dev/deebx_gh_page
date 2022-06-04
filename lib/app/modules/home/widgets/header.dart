@@ -2,10 +2,8 @@ import 'package:deebx_gh_page/app/modules/home/controller.dart';
 import 'package:deebx_gh_page/core/consts.dart';
 import 'package:deebx_gh_page/core/theme/text/text_theme.dart';
 import 'package:deebx_gh_page/core/utils/functions/launch_url.dart';
-import 'package:deebx_gh_page/core/values/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class FooterWidget extends GetView<HomeController> {
   @override
