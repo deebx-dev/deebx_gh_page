@@ -3,6 +3,7 @@ import 'package:deebx_gh_page/core/values/colors.dart';
 import 'package:deebx_gh_page/core/values/consts.dart';
 import 'package:deebx_gh_page/routes/pages.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:simple_shadow/simple_shadow.dart';
 
@@ -86,6 +87,35 @@ class AppBarWidget extends GetView<DashboardController> {
                     ),
                   ),
                 ),
+                MouseRegion(
+                    child: InkWell(
+                        onTap: () => '',
+                        hoverColor: middle_yellow.withOpacity(.2),
+                        splashColor: desert_sand,
+                        highlightColor: tumbleweed,
+                        child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: SvgPicture.asset(
+                              '${ICONS}linkedin.svg',
+                              width: 16.0,
+                              height: 16.0,
+                            )))),
+                const SizedBox(
+                  width: 24.0,
+                ),
+                MouseRegion(
+                    child: InkWell(
+                        onTap: () => '',
+                        hoverColor: middle_yellow.withOpacity(.2),
+                        splashColor: desert_sand,
+                        highlightColor: tumbleweed,
+                        child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: SvgPicture.asset(
+                              '${ICONS}instagram.svg',
+                              width: 16.0,
+                              height: 16.0,
+                            ))))
               ]),
             ],
           ),
