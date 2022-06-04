@@ -13,5 +13,6 @@ abstract class AppPages {
         name: Routes.DASH,
         page: () => DashboardPage(),
         bindings: [DashboardBinding()]),
+    
   ];
 }

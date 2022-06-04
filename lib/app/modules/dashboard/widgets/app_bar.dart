@@ -1,4 +1,5 @@
 import 'package:deebx_gh_page/app/modules/dashboard/controller.dart';
+import 'package:deebx_gh_page/core/utils/functions/open_url.dart';
 import 'package:deebx_gh_page/core/values/colors.dart';
 import 'package:deebx_gh_page/core/values/consts.dart';
 import 'package:deebx_gh_page/routes/pages.dart';
@@ -54,46 +55,46 @@ class AppBarWidget extends GetView<DashboardController> {
                 const SizedBox(
                   width: 24.0,
                 ),
-                MouseRegion(
-                  child: InkWell(
-                    borderRadius: const BorderRadius.all(Radius.circular(4.0)),
-                    onTap: () => '',
-                    hoverColor: middle_yellow.withOpacity(.2),
-                    splashColor: desert_sand,
-                    highlightColor: tumbleweed,
-                    child: const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        'Quem somos',
-                        style: TextStyle(color: tumbleweed),
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  width: 24.0,
-                ),
-                MouseRegion(
-                  child: InkWell(
-                    borderRadius: const BorderRadius.all(Radius.circular(4.0)),
-                    onTap: () => '',
-                    hoverColor: middle_yellow.withOpacity(.2),
-                    splashColor: desert_sand,
-                    highlightColor: tumbleweed,
-                    child: const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        'Seja parceiro',
-                        style: TextStyle(color: tumbleweed),
-                      ),
-                    ),
-                  ),
-                ),
+                // MouseRegion(
+                //   child: InkWell(
+                //     borderRadius: const BorderRadius.all(Radius.circular(4.0)),
+                //     onTap: () => '',
+                //     hoverColor: middle_yellow.withOpacity(.2),
+                //     splashColor: desert_sand,
+                //     highlightColor: tumbleweed,
+                //     child: const Padding(
+                //       padding: EdgeInsets.all(8.0),
+                //       child: Text(
+                //         'Quem somos',
+                //         style: TextStyle(color: tumbleweed),
+                //       ),
+                //     ),
+                //   ),
+                // ),
+                // const SizedBox(
+                //   width: 24.0,
+                // ),
+                // MouseRegion(
+                //   child: InkWell(
+                //     borderRadius: const BorderRadius.all(Radius.circular(4.0)),
+                //     onTap: () => '',
+                //     hoverColor: middle_yellow.withOpacity(.2),
+                //     splashColor: desert_sand,
+                //     highlightColor: tumbleweed,
+                //     child: const Padding(
+                //       padding: EdgeInsets.all(8.0),
+                //       child: Text(
+                //         'Seja parceiro',
+                //         style: TextStyle(color: tumbleweed),
+                //       ),
+                //     ),
+                //   ),
+                // ),
                 MouseRegion(
                     child: InkWell(
                         borderRadius:
                             const BorderRadius.all(Radius.circular(4.0)),
-                        onTap: () => '',
+                        onTap: () => openUrl(LINKEDIN),
                         hoverColor: middle_yellow.withOpacity(.2),
                         splashColor: desert_sand,
                         highlightColor: tumbleweed,
@@ -111,7 +112,7 @@ class AppBarWidget extends GetView<DashboardController> {
                     child: InkWell(
                         borderRadius:
                             const BorderRadius.all(Radius.circular(4.0)),
-                        onTap: () => '',
+                        onTap: () => openUrl(INSTAGRAM),
                         hoverColor: middle_yellow.withOpacity(.2),
                         splashColor: desert_sand,
                         highlightColor: tumbleweed,
