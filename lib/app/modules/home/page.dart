@@ -1,8 +1,4 @@
-import 'dart:ui';
-
 import 'package:deebx_gh_page/app/modules/home/controller.dart';
-import 'package:deebx_gh_page/app/modules/home/widgets/first_section.dart';
-import 'package:deebx_gh_page/app/modules/home/widgets/second_section.dart';
 import 'package:deebx_gh_page/core/consts.dart';
 import 'package:deebx_gh_page/core/theme/text/text_theme.dart';
 import 'package:deebx_gh_page/core/utils/functions/launch_url.dart';
