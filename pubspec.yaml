@@ -64,9 +64,10 @@ flutter:
     - assets/images/bg_image.jpg
     - assets/images/bg_image_2.jpg
     - assets/images/logo.png
+    - assets/images/art_girl.png
     - assets/images/dj.svg
     - assets/images/artist.svg
-    - assets/images/reader.svg
+    - assets/images/crypto.svg
     - assets/icons/instagram.svg
     - assets/icons/linkedin.svg
     - assets/images/example_art.png

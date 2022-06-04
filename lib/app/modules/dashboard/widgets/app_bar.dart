@@ -56,6 +56,7 @@ class AppBarWidget extends GetView<DashboardController> {
                 ),
                 MouseRegion(
                   child: InkWell(
+                    borderRadius: const BorderRadius.all(Radius.circular(4.0)),
                     onTap: () => '',
                     hoverColor: middle_yellow.withOpacity(.2),
                     splashColor: desert_sand,
@@ -74,6 +75,7 @@ class AppBarWidget extends GetView<DashboardController> {
                 ),
                 MouseRegion(
                   child: InkWell(
+                    borderRadius: const BorderRadius.all(Radius.circular(4.0)),
                     onTap: () => '',
                     hoverColor: middle_yellow.withOpacity(.2),
                     splashColor: desert_sand,
@@ -89,6 +91,8 @@ class AppBarWidget extends GetView<DashboardController> {
                 ),
                 MouseRegion(
                     child: InkWell(
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(4.0)),
                         onTap: () => '',
                         hoverColor: middle_yellow.withOpacity(.2),
                         splashColor: desert_sand,
@@ -101,10 +105,12 @@ class AppBarWidget extends GetView<DashboardController> {
                               height: 16.0,
                             )))),
                 const SizedBox(
-                  width: 24.0,
+                  width: 16.0,
                 ),
                 MouseRegion(
                     child: InkWell(
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(4.0)),
                         onTap: () => '',
                         hoverColor: middle_yellow.withOpacity(.2),
                         splashColor: desert_sand,

@@ -1,8 +1,12 @@
 import 'package:deebx_gh_page/app/modules/home/controller.dart';
+import 'package:deebx_gh_page/app/modules/home/widgets/first_section.dart';
+import 'package:deebx_gh_page/core/theme.dart/text_theme.dart';
 import 'package:deebx_gh_page/core/utils/functions/app_bar_size.dart';
 import 'package:deebx_gh_page/core/values/colors.dart';
+import 'package:deebx_gh_page/core/values/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends GetView<HomeController> {
   @override
@@ -11,25 +15,9 @@ class HomePage extends GetView<HomeController> {
         backgroundColor: cornsilk,
         body: SafeArea(
             child: ListView(
-          children: [
-            Container(
-                padding: const EdgeInsets.all(24.0),
-                height: Get.height - getAppBarSize() * 5,
-                width: Get.width,
-                decoration: const BoxDecoration(
-                    color: tumbleweed,
-                    borderRadius: BorderRadius.only(
-                        bottomRight: Radius.circular(32.0),
-                       )),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Unindo as Artes Digitais à Benefícios exclusivos!',
-                      style: TextStyle(color: cornsilk, fontSize: 32.0),
-                    ),
-                  ],
-                )),
+          children: [FirstSectionPage(),
+          
+          
           ],
         )));
   }
