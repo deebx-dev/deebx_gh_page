@@ -7,49 +7,42 @@ import 'package:flutter_sinusoidals/flutter_sinusoidals.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-class FirstSectionPage extends GetView<HomeController> {
+class MFirstSectionPage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Sinusoidal(
       reverse: true,
       model: const SinusoidalModel(
         formular: WaveFormular.travelling,
-        amplitude: 3,
+        amplitude: 4,
         waves: 1.5,
         frequency: .5,
       ),
       child: Container(
           padding: const EdgeInsets.all(24.0),
-          height: Get.height / 1.3,
+          height: Get.height - 100,
           width: Get.width,
           decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('${IMAGES}bg_image_2.jpg'),
                 fit: BoxFit.cover),
-            color: tumbleweed,
           ),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 'Unindo Artes Digitais à Benefícios exclusivos!',
                 style: text_header,
               ),
               Container(
-                  padding: const EdgeInsets.all(24.0),
-                  height: Get.height / 3,
-                  decoration: BoxDecoration(
-                      color: cornsilk.withOpacity(.7),
-                      borderRadius:
-                          const BorderRadius.all(Radius.circular(8.0))),
-                  margin: const EdgeInsets.only(top: 32.0),
-                  width: Get.width / 2,
-                  child: ListView(scrollDirection: Axis.horizontal, children: [
+                margin: const EdgeInsets.only(top: 32.0),
+                decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(.4),
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0))),
+                child: Column(
+                  children: [
                     Container(
                         padding: const EdgeInsets.all(16.0),
-                        height: Get.height / 5,
-                        width: Get.width / 7,
+                        width: Get.width,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -61,14 +54,12 @@ class FirstSectionPage extends GetView<HomeController> {
                             SvgPicture.asset(
                               '${IMAGES}dj.svg',
                               height: Get.height / 8,
-                              width: Get.height / 8,
                             ),
                           ],
                         )),
                     Container(
                         padding: const EdgeInsets.all(16.0),
-                        height: Get.height / 5,
-                        width: Get.width / 7,
+                        width: Get.width,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -86,8 +77,7 @@ class FirstSectionPage extends GetView<HomeController> {
                         )),
                     Container(
                         padding: const EdgeInsets.all(16.0),
-                        height: Get.height / 5,
-                        width: Get.width / 7,
+                        width: Get.width,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -102,9 +92,11 @@ class FirstSectionPage extends GetView<HomeController> {
                               width: Get.height / 8,
                             ),
                           ],
-                        ))
-                  ])),
-              Container()
+                        )),
+                    Container()
+                  ],
+                ),
+              ),
             ],
           )),
     );

@@ -11,6 +11,6 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: DashboardPage(),
       getPages: AppPages.pages,
-      initialRoute: Routes.DASH,
+      // initialRoute: Routes.DASH,
       initialBinding: DashboardBinding()));
 }

@@ -1,5 +1,7 @@
 # deebx_gh_page
 
+flutter run  --no-sound-null-safety --web-renderer html --profile
+
 A new Flutter project.
 
 ## Getting Started

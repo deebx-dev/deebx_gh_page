@@ -1,62 +1,54 @@
 import 'package:deebx_gh_page/app/modules/home/controller.dart';
 import 'package:deebx_gh_page/core/theme.dart/text_theme.dart';
-import 'package:deebx_gh_page/core/values/colors.dart';
 import 'package:deebx_gh_page/core/values/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:simple_shadow/simple_shadow.dart';
 
-class SecondSectionPage extends GetView<HomeController> {
+class MFourthSectionPage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(24.0),
-      child: Row(
+      margin: const EdgeInsets.only(left: 24.0, right: 24.0, bottom: 32.0),
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SimpleShadow(
               color: Colors.black,
               offset: const Offset(5, 5),
-              sigma: 4,
+              sigma: 3,
               opacity: 1,
               child: Image.asset(
-                '${IMAGES}example_art.png',
-                height: Get.height / 3.5,
+                '${IMAGES}statue.png',
+                height: Get.height / 4.5,
               )),
-          SizedBox(
-            width: Get.width / 4,
+          Container(
+            margin: const EdgeInsets.only(top: 32.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                RichText(
-                    text: TextSpan(style: text_cards, children: [
-                  const TextSpan(text: 'A '),
-                  TextSpan(
-                    text: 'deebX ',
-                    style: text_cards.copyWith(color: tumbleweed),
-                  ),
-                  const TextSpan(
-                      text:
-                          'surge com a missão de estimular e aquecer o mercado da arte no Brasil.')
-                ])),
-                const SizedBox(
-                  height: 8.0,
-                ),
                 Text(
-                  'Sabemos que valorizar e incentivar nossos artistas é, também, um incentivo a cultura.',
+                  'Criar um mercado de arte focado no mercado nacional, mas aberto para o consumo externo, é uma forma de fortalecer não só a arte e cultura do Brasil, mas também captar recursos externos.',
                   style: text_cards,
                 ),
                 const SizedBox(
                   height: 8.0,
                 ),
                 Text(
-                  'Por isso resolvemos unir a classe da arte com a modernidade da blockchain, para trazer vantagens, tanto para o público consumidor quanto para os criadores digitais.',
+                  'Com esse intuito, nossa plataforma se tornará um acerto de Artes Digitais Nacional, possuindo assim, não só imagens, mas músicas, livros, ingressos em forma de tokens colecionáveis.',
+                  style: text_cards,
+                ),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                Text(
+                  'Além da geração do seu NFT ser grátis, você tem a opção de adicionar uma porcentagem de royalts pela sua obra, dessa maneira mesmo em futuras transações, você será recompensado!',
                   style: text_cards,
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

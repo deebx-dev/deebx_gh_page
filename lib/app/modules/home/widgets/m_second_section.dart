@@ -6,12 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:simple_shadow/simple_shadow.dart';
 
-class SecondSectionPage extends GetView<HomeController> {
+class MSecondSectionPage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(24.0),
-      child: Row(
+      margin: const EdgeInsets.only(
+          left: 24.0, right: 24.0, bottom: 24.0, top: 0.0),
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -25,7 +26,6 @@ class SecondSectionPage extends GetView<HomeController> {
                 height: Get.height / 3.5,
               )),
           SizedBox(
-            width: Get.width / 4,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
